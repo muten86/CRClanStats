@@ -21,8 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `id5524218_croyale`
 --
-CREATE DATABASE IF NOT EXISTS `id5524218_croyale` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-USE `id5524218_croyale`;
+/*CREATE DATABASE IF NOT EXISTS `id5524218_croyale` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+USE `id5524218_croyale`;*/
 
 -- --------------------------------------------------------
 
