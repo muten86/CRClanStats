@@ -1,5 +1,7 @@
 <?php 
+
 use CR\Api;
+
 require 'vendor/autoload.php';
 /**
  * Return all the information about the given users tag
