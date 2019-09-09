@@ -26,5 +26,5 @@ return array(
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
     'DebugBar\\' => array($vendorDir . '/maximebf/debugbar/src/DebugBar'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
-    'CR\\' => array($baseDir . '/src', $vendorDir . '/firegore2/clash-royale-php/src'),
+    'CR\\' => array($baseDir . '/src'),
 );

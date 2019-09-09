@@ -148,7 +148,6 @@ class ComposerStaticInit1f3518eeceae96cbfe92fa64d0109ead
         'CR\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
-            1 => __DIR__ . '/..' . '/firegore2/clash-royale-php/src',
         ),
     );
 
