@@ -1,4 +1,5 @@
 <?php 
+use vendor\firegore2\clash-royale-php\src\Api;
 use CR\Api;
 require 'vendor/autoload.php';
 /**
@@ -12,7 +13,7 @@ require 'vendor/autoload.php';
 
 include "config.php";
 
- $api = @new Api($token);
+ $api = @new Api($token); 
 try{ $war = @$api->getWar([$clanID]);
 //d($clan); //This display the array with Player objects
 /*
