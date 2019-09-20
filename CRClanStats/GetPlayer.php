@@ -158,18 +158,9 @@ try {
         foreach( $members_php as $members ){
             $members->{"lastseen"} = ( strtotime("now") - strtotime( $members->{"lastSeen"} ) ) / 60/60/24;
             $members->{"lastseen"} = round($members->{"lastseen"},1);
-            if (isset($members->{"since"}) && isset($members->{"donlastweek"}) && isset($members->{"lastseen"})){
-            if ( ( $members->{"donlastweek"} < 100 or $members->{"lastseen"} > "5"  )
-                && $members->{"since"} <= getDueDate(1) 
-            ){
-                $members->{"color"} = 'Error';
-                
-            }else{
-                $members->{"color"} = 'Success';
-            }
-            }
             
-            
+
+            $members->{"color"} = define_line_color($members);
         }
         
        
