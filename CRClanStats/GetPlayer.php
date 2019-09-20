@@ -53,9 +53,9 @@ try {
         $datetoday = new DateTime(date("Y-m-d H:i:s"));
         $datetoday->modify("-".$noWeeksBack." week");
         
-        $datetoday->modify("+". (7 - $datetoday->format("N")) ." days");
+        $datetoday->modify("+". ($end_of_period_day - $datetoday->format("N")) ." days");
             
-        return $datetoday->format("Y-m-d") . " 18:00:00";
+        return $datetoday->format("Y-m-d") . $end_of_period_time;
     };
     
     
