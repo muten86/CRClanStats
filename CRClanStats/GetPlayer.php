@@ -50,6 +50,7 @@ try {
     
     //Gibt immer den SQL-Timestanp des Sonntag 18:00 vor X-Wochen zurueck
     function getDueDate($noWeeksBack){
+        global $end_of_period_day, $end_of_period_time;
         $datetoday = new DateTime(date("Y-m-d H:i:s"));
         $datetoday->modify("-".$noWeeksBack." week");
         
