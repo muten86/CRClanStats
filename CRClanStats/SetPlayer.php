@@ -35,6 +35,7 @@ try {
     
     $sql = "INSERT INTO members ( Rank, Name, Tag, Donations, Trophies, Role, ExpLevel) VALUES ";
     $counter = 1;
+    
     foreach($members as $member) {
         if ($counter > 1){
             $sql .= ",";
