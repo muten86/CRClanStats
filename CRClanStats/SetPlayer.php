@@ -14,7 +14,7 @@ require 'vendor/autoload.php';
 include "config.php";
 
  $api = @new Api($token);
-try{ $clan = @$api->getClan([$clanID]);
+try{ $clan = @$api->getClan([$clanId]);
 //d($clan); //This display the array with Player objects
 $content = json_decode($clan, true);
 $members = $content["members"];

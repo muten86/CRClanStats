@@ -11,10 +11,8 @@ require 'vendor/autoload.php';
  * @return Player[]                   Array of Player Objects if given more than one profile, else return one Player Object
  */
 
-include "config.php";
-
  $api = @new Api($token); 
-try{ $war = @$api->getWar([$clanID]);
+try{ $war = @$api->getWar([$clanId]);
 //d($clan); //This display the array with Player objects
 /*
 $dataSet = array ( "WarId"=> 0,
