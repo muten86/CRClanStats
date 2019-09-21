@@ -124,7 +124,7 @@ var playertab = new sap.ui.table.Table("idPlayerTab", { visibleRowCountMode: sap
 
 playertab.setSelectionMode(sap.ui.table.SelectionMode.None);
 //Spaltenkonfiguration
-playertab.addColumn( new sap.ui.table.Column({ 	label: new sap.ui.commons.Label({ text:"Rang" }), 
+playertab.addColumn( new sap.ui.table.Column({ 	label: new sap.ui.commons.Label({ text:"Rank" }), 
 											template: new sap.m.Text({  text: "{rank}"      }),
 											width:"10mm"  })
 );
@@ -141,7 +141,7 @@ width:"30mm"
 })
 );
 
-var oColDonations = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Spenden" }), 
+var oColDonations = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Donations" }), 
     									template: new sap.m.Text({  text: "{donations}"      }),	
     									sortProperty: "donations",
     									filterProperty: "donations",
@@ -151,7 +151,7 @@ var oColDonations = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Sp
 playertab.addColumn(oColDonations);
 addColumnSorterAndFilter(oColDonations, compareIntegers);
 
- var oColDonations2 = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Spenden W-1" }), 
+ var oColDonations2 = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Don W-1" }), 
 		template: new sap.m.Text({  text: "{donlastweek}"      }),	
 		sortProperty: "donlastweek",
 		filterProperty: "donlastweek",
@@ -161,7 +161,7 @@ addColumnSorterAndFilter(oColDonations, compareIntegers);
 playertab.addColumn(oColDonations2);
 addColumnSorterAndFilter(oColDonations2, compareIntegers);
 
-var oColDonations3 = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Spenden W-2" }), 
+var oColDonations3 = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Don W-2" }), 
 template: new sap.m.Text({  text: "{don2week}"      }),	
 sortProperty: "don2week",
 filterProperty: "don2week",
@@ -171,7 +171,7 @@ width:"30mm"
 playertab.addColumn(oColDonations3);
 addColumnSorterAndFilter(oColDonations3, compareIntegers);
 
-var oColDonations4 = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Spenden W-3" }), 
+var oColDonations4 = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Don W-3" }), 
 template: new sap.m.Text({  text: "{don3week}"      }),	
 sortProperty: "don3week",
 filterProperty: "don3week",
@@ -183,7 +183,7 @@ addColumnSorterAndFilter(oColDonations4, compareIntegers);
 
 
 
-var oColLastSeen = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Zuletzt Online" }), 
+var oColLastSeen = new sap.ui.table.Column({ 	label: new sap.m.Label({ text:"Days offline" }), 
 template: new sap.m.Text({  text: "{lastseen}"      }),	
 sortProperty: "lastseen",
 filterProperty: "lastseen",
@@ -194,7 +194,7 @@ playertab.addColumn(oColLastSeen);
 addColumnSorterAndFilter(oColLastSeen, compareIntegers);
 
 
-var oColTrophies =  new sap.ui.table.Column({ label: new sap.m.Label({ text:"Trophaen" }), 
+var oColTrophies =  new sap.ui.table.Column({ label: new sap.m.Label({ text:"Trophies" }), 
 template: new sap.m.Text({  text: "{trophies}"      }) ,
 width:"30mm",
 
@@ -205,21 +205,21 @@ filterProperty: "trophies"
 playertab.addColumn(oColTrophies);
 addColumnSorterAndFilter(oColTrophies, compareIntegers);
 
-playertab.addColumn( new sap.ui.table.Column({ 	label: 		new sap.m.Label({ text:"Rolle" }), 
+playertab.addColumn( new sap.ui.table.Column({ 	label: 		new sap.m.Label({ text:"Role" }), 
 												template: 	new sap.m.Text("idColRole",{ text: "{role}" }),
 												width:		"30mm" 
 											})
 );
 
 
-var oColExpLevel = new sap.ui.table.Column({ label: new sap.m.Label({ text:"Stufe" }), 
+var oColExpLevel = new sap.ui.table.Column({ label: new sap.m.Label({ text:"Level" }), 
 template: new sap.m.Text({  text: "{expLevel}"      }) ,
 sortProperty: "expLevel",
 filterProperty: "expLevel",
 width:"20mm"
 });
 
-var oColExpLevel = new sap.ui.table.Column({ label: new sap.m.Label({ text:"dabei seit" }), 
+var oColExpLevel = new sap.ui.table.Column({ label: new sap.m.Label({ text:"in Clan since" }), 
 template: new sap.m.Text({  text: "{since}"      }) ,
 width:"45mm"
 });
